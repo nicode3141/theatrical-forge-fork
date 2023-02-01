@@ -25,6 +25,9 @@ class TheatricalBlockLootTables extends BlockLootTables {
                 case "moving_light":
                     this.registerLootTable(TheatricalBlocks.MOVING_LIGHT.get(), droppingWithBroken(TheatricalBlocks.MOVING_LIGHT.get()));
                     break;
+                case "flood_light":
+                    this.registerLootTable(TheatricalBlocks.FLOOD_LIGHT.get(), droppingWithBroken(TheatricalBlocks.FLOOD_LIGHT.get()));
+                    break;
                 default:
                     registerDropSelfLootTable(block);
             }

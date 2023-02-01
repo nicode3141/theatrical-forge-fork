@@ -72,7 +72,7 @@
 			"children": []
 		},
 		{
-			"name": "fresnel_handle_only",
+			"name": "flood_handle_only",
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [
@@ -85,12 +85,12 @@
 			]
 		},
 		{
-			"name": "fresnel_hook",
+			"name": "flood_hook",
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [
 				{
-					"name": "fresnel",
+					"name": "flood",
 					"origin": [8, 8, 8],
 					"color": 0,
 					"children": [

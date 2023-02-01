@@ -61,6 +61,7 @@ public class TheatricalClient extends TheatricalCommon {
         RenderTypeLookup.setRenderLayer(TheatricalBlocks.TRUSS.get(), cutout);
         RenderTypeLookup.setRenderLayer(TheatricalBlocks.MOVING_LIGHT.get(), cutout);
         RenderTypeLookup.setRenderLayer(TheatricalBlocks.GENERIC_LIGHT.get(), cutout);
+        RenderTypeLookup.setRenderLayer(TheatricalBlocks.FLOOD_LIGHT.get(), cutout);
         RenderTypeLookup.setRenderLayer(TheatricalBlocks.BASIC_LIGHTING_DESK.get(), cutout);
         ClientRegistry.bindTileEntityRenderer(TheatricalTiles.MOVING_LIGHT.get(), TileEntityFixtureRenderer::new);
         ClientRegistry.bindTileEntityRenderer(TheatricalTiles.GENERIC_LIGHT.get(), TileEntityFixtureRenderer::new);
