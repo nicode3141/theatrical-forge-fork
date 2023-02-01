@@ -8,6 +8,7 @@ import dev.theatricalmod.theatrical.block.cables.BlockPowerCable;
 import dev.theatricalmod.theatrical.block.control.BlockBasicLightingControl;
 import dev.theatricalmod.theatrical.block.interfaces.BlockArtNetInterface;
 import dev.theatricalmod.theatrical.block.interfaces.BlockDMXRedstoneInterface;
+import dev.theatricalmod.theatrical.block.light.BlockFloodFixture;
 import dev.theatricalmod.theatrical.block.light.BlockGenericFixture;
 import dev.theatricalmod.theatrical.block.light.BlockIlluminator;
 import dev.theatricalmod.theatrical.block.light.BlockMovingLight;
@@ -29,6 +30,8 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.accessibility.AccessibleRelationSet;
+
 public class TheatricalBlocks {
 
     public static final AbstractBlock.Properties BASE_PROPERTIES = Block.Properties.create(Material.ANVIL, MaterialColor.GRAY).setRequiresTool().hardnessAndResistance(3, 3);
@@ -40,6 +43,7 @@ public class TheatricalBlocks {
     public static final RegistryObject<Block> TRUSS = BLOCKS.register("truss", BlockTruss::new);
     public static final RegistryObject<Block> MOVING_LIGHT = BLOCKS.register("moving_light", BlockMovingLight::new);
     public static final RegistryObject<Block> GENERIC_LIGHT = BLOCKS.register("generic_light", () -> new BlockGenericFixture(TheatricalFixtures.FRESNSEL));
+    public static final RegistryObject<Block> FLOOD_LIGHT = BLOCKS.register("flood_light", () -> new BlockFloodFixture(TheatricalFixtures.FLOOD_LIGHT));
     public static final RegistryObject<Block> DMX_CABLE = BLOCKS.register("dmx_cable", () -> new BlockCable(CableType.DMX));
     public static final RegistryObject<Block> SOCAPEX_CABLE = BLOCKS.register("socapex_cable", () -> new BlockCable(CableType.SOCAPEX));
     public static final RegistryObject<Block> DIMMED_POWER_CABLE = BLOCKS.register("dimmed_power_cable", BlockDimmedPowerCable::new);

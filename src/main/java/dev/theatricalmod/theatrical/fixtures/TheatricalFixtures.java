@@ -6,5 +6,5 @@ public class TheatricalFixtures {
 
     public static final Fixture MOVING_LIGHT = new MovingLightFixture();
     public static final Fixture FRESNSEL = new FixtureFresnel();
-
+    public static final Fixture FLOOD_LIGHT = new FloodFixture();
 }
